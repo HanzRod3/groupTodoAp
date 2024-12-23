@@ -1,5 +1,14 @@
-# Ignore environment variable file
-.env
-
-# Ignore node modules folder
+# General ignores
 node_modules/
+.env
+.env.local
+
+# Backend-specific ignores
+server/node_modules/
+server/.env
+server/logs/
+
+# Frontend-specific ignores
+client/node_modules/
+client/build/
+client/.env.local
