@@ -13,7 +13,7 @@ dotenv.config(); // Load environment variables from .env file (e.g., MONGODB_URI
 
 dbConnect(); // Connect to MongoDB using the dbConnect function.
 
-app.use("/create", taskRouter); // Mount the task routes. Requests to "/create" are forwarded to `taskRouter`.
+app.use("/", taskRouter); // Mount the task routes. Requests to "/create" are forwarded to `taskRouter`.
 
 const PORT = process.env.PORT || 8001; // Define the port to listen on (from .env or default to 8001).
 
